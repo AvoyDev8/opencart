@@ -155,6 +155,9 @@
       &lt;include name=&quot;Regression&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
@@ -211,7 +214,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_login')
 data.setCell(0, 2, 'testCases.LoginTestCase')
-data.setCell(0, 3, 1653);
+data.setCell(0, 3, 1503);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -249,11 +252,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_login</span>
-                <span class="method-start">10073 ms</span>
+                <span class="method-start">4027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">11737 ms</span>
+                <span class="method-start">5551 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

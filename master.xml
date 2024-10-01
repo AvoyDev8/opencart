@@ -3,13 +3,6 @@
 
 <suite name="Suite">
 
-	<groups>
-		<run>
-			<include name="sanity" />
-			<include name="Regression" />
-		</run>
-	</groups>
-	
 	<listeners>
 		<listener class-name="utilities.ExtentManager" />
 	</listeners>

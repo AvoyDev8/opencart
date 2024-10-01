@@ -1,4 +1,5 @@
-2024-09-20 19:58:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-09-20 19:58:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2024-09-20 19:58:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-2024-09-20 19:58:40 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-10-01 18:49:43 [main] INFO  testCases.LoginTestCase - ************* Called My account page *******************
+2024-10-01 18:51:20 [main] INFO  testCases.LoginTestCase - ************* Starting TC *******************
+2024-10-01 18:51:21 [main] INFO  testCases.LoginTestCase - ************* Login with cred *******************
+2024-10-01 18:51:22 [main] INFO  testCases.LoginTestCase - ************* Called My account page *******************
+2024-10-01 18:53:24 [main] INFO  testCases.LoginTestCase - ************* Starting TC *******************
