@@ -1,0 +1,3 @@
+2024-10-01 13:45:15 [main] INFO  testCases.LoginTestCase - ************* Starting TC *******************
+2024-10-01 13:45:15 [main] INFO  testCases.LoginTestCase - ************* Login with cred *******************
+2024-10-01 13:45:16 [main] INFO  testCases.LoginTestCase - ************* Called My account page *******************
