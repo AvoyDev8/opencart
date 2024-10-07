@@ -3,6 +3,8 @@ package testBase;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -19,6 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -34,7 +37,7 @@ public class BaseClass {
 	
 	@BeforeClass(groups= {"sanaty","Regression","Master"})
 	@Parameters({"os","browser"})
-	public void setup(String os, String browser) {
+	public void setup(String os, String browser) throws MalformedURLException {
 		
 		//properties files
 		try {
@@ -55,7 +58,7 @@ public class BaseClass {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
 			if(os.equalsIgnoreCase("Windows")) {
-				capabilities.setPlatform(Platform.WIN11);
+				capabilities.setPlatform(Platform.WIN10);
 			}
 			else if(os.equalsIgnoreCase("mac")) {
 				capabilities.setPlatform(Platform.MAC);
@@ -75,6 +78,8 @@ public class BaseClass {
 			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
 			default: System.out.println("No Matching Browser"); return;
 			}
+			
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		}
 		else {
 			
